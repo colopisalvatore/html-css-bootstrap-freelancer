@@ -13,13 +13,13 @@
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <title>Bootstrap</title>
 </head>
 <body>
     <header>
-    <nav class="navbar navbar-dark navbar-expand-md h-100">
+    <nav class="navbar navbar-dark navbar-expand-lg h-100">
         <div class="container-sm align-items-center text-uppercase">
-            <a class="navbar-brand fw-bold fs-3" href="#">Start bootstrap</a>
+            <a class="navbar-brand fw-bold fs-4" href="#">Start bootstrap</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -27,13 +27,13 @@
             <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#portfolio">Portfolio</a>
+                        <a class="nav-link active hov-green" aria-current="page" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link hov-green" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link hov-green" href="#contact">Contact</a>
                     </li>
             </div>
         </div>
@@ -55,7 +55,7 @@
             <div class="row justify-content-center mt-4">
                 <div class="d-flex justify-content-center align-items-center">
                     <div class="line d-inline-block bg-white"></div>
-                    <i class="fas fa-star fs-3 text-white px-3"></i>
+                    <i class="fas fa-star fs-4 text-white px-3"></i>
                     <div class="line d-inline-block bg-white"></div>
                 </div>
             </div>
@@ -71,28 +71,40 @@
                 <!-- SPACER -->
                 <div class="d-flex justify-content-center align-items-center mt-4">
                     <div class="line d-inline-block bg-black"></div>
-                    <i class="fas fa-star fs-3 px-3"></i>
+                    <i class="fas fa-star fs-4 px-3"></i>
                     <div class="line d-inline-block bg-black"></div>
                 </div>
                 <!-- IMAGE -->
-                <div class="row">
-                    <div class="mt-4 col-12 col-sm-6 col-md-4">
-                        <img src="img/cabin.png" alt="cabina" class="rounded-3">
+                <div class="row mt-4 gy-4">
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="position-relative rounded-3 overflow-hidden hov-overlay text-white">
+                            <img src="img/cabin.png" alt="cabina" class="img-fluid">
+                        </div>
                     </div>
-                    <div class="mt-4 col-12 col-sm-6 col-md-4">
-                        <img src="img/cake.png" alt="torta" class="rounded-3">
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="position-relative rounded-3 overflow-hidden hov-overlay text-white">
+                            <img src="img/cake.png" alt="torta" class="img-fluid">
+                        </div>
                     </div>
-                    <div class="mt-4 col-12 col-sm-6 col-md-4">
-                        <img src="img/circus.png" alt="circo" class="rounded-3">
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="position-relative rounded-3 overflow-hidden hov-overlay text-white">
+                            <img src="img/circus.png" alt="circo" class="img-fluid">
+                        </div>
                     </div>
-                    <div class="mt-4 col-12 col-sm-6 col-md-4">
-                        <img src="img/game.png" alt="joy-pad" class="rounded-3">
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="position-relative rounded-3 overflow-hidden hov-overlay text-white">
+                            <img src="img/game.png" alt="joy-pad" class="img-fluid">
+                        </div>
                     </div>
-                    <div class="mt-4 col-12 col-sm-6 col-md-4">
-                        <img src="img/safe.png" alt="cassaforte" class="rounded-3">
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="position-relative rounded-3 overflow-hidden hov-overlay text-white">
+                            <img src="img/safe.png" alt="cassaforte" class="img-fluid">
+                        </div>
                     </div>
-                    <div class="mt-4 col-12 col-sm-6 col-md-4">
-                        <img src="img/submarine.png" alt="sottomarino" class="rounded-3">
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="position-relative rounded-3 overflow-hidden hov-overlay text-white">
+                            <img src="img/submarine.png" alt="sottomarino" class="img-fluid">
+                        </div>
                     </div>
                 </div>
 
@@ -105,7 +117,7 @@
                 <!-- SPACER -->
                 <div class="d-flex justify-content-center align-items-center mt-4">
                     <div class="line d-inline-block bg-white"></div>
-                    <i class="fas fa-star fs-3 px-3 text-white"></i>
+                    <i class="fas fa-star fs-4 px-3 text-white"></i>
                     <div class="line d-inline-block bg-white"></div>
                 </div>
                 <div class="row mt-3">
@@ -124,18 +136,88 @@
             </div>
 
         </section>
-        <section id="contact" class=">
-            <div class="container-md"></div>
+        <section id="contact" class="mt-5">
+            <h2 class="text-center text-uppercase">contact me</h2>
+            <!-- SPACER -->
+            <div class="d-flex justify-content-center align-items-center mt-4">
+                <div class="line d-inline-block bg-black"></div>
+                <i class="fas fa-star fs-4 px-3"></i>
+                <div class="line d-inline-block bg-black"></div>
+            </div>
+            <div class="container-md mt-5">                
+                <!-- FORM -->
+                <form class="col-8 offset-2 ">
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="name" type="name" placeholder="Enter your name..."
+                            data-sb-validations="required" />
+                        <label for="name">Name</label>
+                        <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                    </div>                
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="email" type="email" placeholder="Enter your name..."
+                            data-sb-validations="required" />
+                        <label for="email">Email Adress</label>
+                        <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                    </div>                
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="number" type="number " placeholder="Enter your name..."
+                            data-sb-validations="required" />
+                        <label for="number">Phone Number</label>
+                        <div class="invalid-feedback" data-sb-feedback="number:required">A phone number is required.</div>
+                    </div>                
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..."
+                            style="height: 10rem" data-sb-validations="required"></textarea>
+                        <label for="message">Message</label>
+                        <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                    </div>
+                    <!-- SEND BUTTON -->
+                    <div>
+                        <button type="button" class="btn btn-success bg-green border-0 mb-5">Send</button>
+                    </div>
+                </form>
+            </div>
 
         </section>
     </main>
     <footer>
         <div id="footer-top" class="bg-grey">
-            <div class="container-md"></div>
+            <div class="container-md">
+                <div class="row text-white text-center p-4">
+                    <div class="col-sm-12 col-md-4 py-3">
+                        <h6 >location</h6>
+                        <p>2215 John Daniel Drive Clark, MO 54243</p>
+                    </div>
+                    <div class="col-sm-12 col-md-4 py-3">
+                        <h6>Around the web</h6>
+                        <a class="btn btn-outline-light btn-social rounded-circle mx-1 px-2" href="#">
+                            <i class="fab fa-fw fa-facebook-f"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social rounded-circle mx-1 px-2" href="#">
+                            <i class="fab fa-fw fa-google-plus-g"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social rounded-circle mx-1 px-2" href="#">
+                            <i class="fab fa-fw fa-twitter"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social rounded-circle mx-1 px-2" href="#">
+                            <i class="fab fa-fw fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-4 py-3">
+                        <h6>About Freelancer</h6>
+                        <p class="text-center">Freelance is a free to use, open source Bootstrap theme created by <a href="" id="bootstart" class="text-color-green text-decoration-none hov-underline hov-green">Start Bootstrap</a>.</p>
+                    </div>
+                </div>
+            </div>
 
         </div>
         <div id="footer-bottom" class="bg-dark-grey">
-            <div class="container-md"></div></div>
+            <div class="container-md">
+                <div class="container-md py-3 text-white text-center">
+                    <p>Copyright <i class="fa-regular fa-copyright"></i> Your Website 2019</p>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
